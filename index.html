@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>מזג האוויר בעתלית</title>
+  <style>
+    body {
+      background-color: #e0f0ff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+      color: #003366;
+    }
+    .card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .section {
+      margin-bottom: 15px;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>מזג האוויר בעתלית - 6:00 בבוקר</h1>
+    <div class="section" id="weather">טוען מזג אוויר...</div>
+    <div class="section" id="waves">טוען גובה גלים...</div>
+    <div class="section" id="wind">טוען רוח...</div>
+    <div class="section" id="moon">טוען מצב ירח...</div>
+    <div class="section" id="sunrise">טוען שעת זריחה...</div>
+  </div>
+
+  <script>
+    document.getElementById("weather").innerText = "טמפרטורה: 24°C, מעונן חלקית";
+    document.getElementById("waves").innerText = "גובה גלים: 30 ס"מ";
+    document.getElementById("wind").innerText = "רוח: צפון-מערבית, 12 קמ"ש";
+    document.getElementById("moon").innerText = "מצב ירח: 65% הארה";
+    document.getElementById("sunrise").innerText = "זריחה: 6:21 בבוקר";
+  </script>
+</body>
+</html>
